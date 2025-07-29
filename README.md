@@ -12,14 +12,14 @@ Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda)
 ---
 
 ### 🗺️ Overview
-- This backend project is a Proxy Server for NewsPanda web application. Direct data fetch request from client to NewsAPI server is against their policy and leads to Cross-Origin Resource Sharing (CORS) error due to denial of access to resource. 
+- This backend project serves as a Proxy Server for NewsPanda web application.
+- Direct data fetch request from NewsPanda website to NewsAPI server falls under Cross-site request category. The request will hit the server but browser will block the response due to CORS(cross-origin resource sharing) protection.
+- Since NewsAPI don't need corresponding user credentials from Browser profile to be tied with request body, we can bypass the CORS issue using a proxy server. 
+- Requests made by a server (Proxy Server on Render in our case) are seen as interactions by a remote machine, hence Browser does not automatically ties user credentials related to NewsAPI and therefore CORS is not enforced. This allows us to successfully retrieve data from NewsAPI website.
 ---
 
 ### 🛠️ Architecture
-- For learning purpose, complete design was initially executed using React Class based components and Life-cycle methods. This lead to a strong foundation for how React actually manages states, props, and re-rendering. Once completed, all components were converted into funcitonal based components. This helped to grasp mapping between class based and functional based components and made it clear how Reach hooks replaces life-cycle methods.
-- Regarding structure, multiple routes are defined which are further utilized in Navbar as a means to navigate user to different News category sections.
-- Fetch API is used to establish communication with NewsAPI server.
-- All catagory names, API parameters and styling properties are kept declarative, promoting scalability and easier maintainance.
+- 
 ---
 
 ### ✨ Features
