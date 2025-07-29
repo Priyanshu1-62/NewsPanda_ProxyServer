@@ -19,7 +19,11 @@ Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda)
 ---
 
 ### 🛠️ Architecture
-- This is a Express based proxy server
+- The project is alightweight Express-based Proxy server that handles client request for news data.
+- Axios API is used for communicating with Newsapi server based on the dynamic query parameters received from frontend.
+- CORS  middleware is configured to grant secured access to NewsPanda frontend, enabling it to communicate with the proxy server without browser-side CORS restrictions. After server receives a request, CORS middleware updates response headers such as Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, and then lets the route handler handle next.
+- API keys are encapsulated using Environmental variables via dotenv for security.
+- Data fetch algorithm is wrapped in an Error handling structure to account for unexpected errors.
 ---
 
 ### ✨ Features
@@ -31,9 +35,7 @@ Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda)
 ---
 
 ### ⚡ Performance
- - __Smart State handling:__ In React, updating state variables is an asynchronous process. Hence its value must not be used just after initiating its value update, otherwise stale values will be rendered. To handle this in the app, useRef hook is used. This hook can create variables which retain their value between renders and hence can be used to store state variable's updated value for future use.
-- __Throttling:__ When user scrolls down to the end of page, the scroll position triggers a Fetch call for more articles. Server may take time to respond, and the app will take some time to update user interface. In the meantime, the scroll bar stays at the bottom position, potentially triggering multiple fetch calls. This can lead to cluttering of News feed, duplicate News articles, and even app crash. To avoid this, we use throttling. We will enforce a cooldown period between two consecutive fetch calls. The delay would ensure that interface gets updated before triggering the next fetch call.
-- __Error Handling:__ Since the client makes requests to external server, response data can be inconsistent and unpredictable. Hence all API call logic are wrapped in error handling structures to catch errors such as Error 429(Too many requests), No response (Network error or Silent failure) or Error 426 (Upgrade required to continue before cooldown).
+ - 
 ---
 
 ### 🌍 Deployment
