@@ -1,15 +1,14 @@
-# NewsPanda
+# NewsPanda Proxy-Server
 Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda) 🚀
 ---
 
 ### 🧰 Tech Stack
-- [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
-- [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
 - [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
-- [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](#)
-- [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
-- [![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white)](#)
-- [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](#)
+- 	[![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
+- 	[![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB)](#)
+- 	[![axios](https://img.shields.io/badge/axios-5A29E4?logo=axios&logoColor=white)](#)
+-  [![dotenv](https://img.shields.io/badge/dotenv-464646?logo=dotenv&logoColor=white)](#)
+-  [![Render](https://img.shields.io/badge/Render-46E3B7?logo=render&logoColor=black)](#)
 ---
 
 ### 🗺️ Overview
