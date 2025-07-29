@@ -15,11 +15,11 @@ Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda)
 - This backend project serves as a Proxy Server for NewsPanda web application.
 - Direct data fetch request from NewsPanda website to NewsAPI server falls under Cross-site request category. The request will hit the server but browser will block the response due to CORS(cross-origin resource sharing) protection.
 - Since NewsAPI don't need corresponding user credentials from Browser profile to be tied with request body, we can bypass the CORS issue using a proxy server. 
-- Requests made by a server (Proxy Server on Render in our case) are seen as interactions by a remote machine, hence Browser does not automatically ties user credentials related to NewsAPI and therefore CORS is not enforced. This allows us to successfully retrieve data from NewsAPI website.
+- Request made by a server (Proxy Server on Render in our case) is seen as an interaction by a remote machine, hence Browser does not automatically ties user credentials related to NewsAPI and therefore CORS is not enforced. This allows us to successfully retrieve data from NewsAPI website.
 ---
 
 ### 🛠️ Architecture
-- 
+- This is a Express based proxy server
 ---
 
 ### ✨ Features
