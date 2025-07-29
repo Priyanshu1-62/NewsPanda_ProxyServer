@@ -19,23 +19,14 @@ Update: check out the live app [here](https://priyanshu1-62.github.io/NewsPanda)
 ---
 
 ### 🛠️ Architecture
-- The project is alightweight Express-based Proxy server that handles client request for news data.
+- The project is a lightweight Express-based Proxy server that handles client request for news data.
 - Axios API is used for communicating with Newsapi server based on the dynamic query parameters received from frontend.
 - CORS  middleware is configured to grant secured access to NewsPanda frontend, enabling it to communicate with the proxy server without browser-side CORS restrictions. After server receives a request, CORS middleware updates response headers such as Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, and then lets the route handler handle next.
-- API keys are encapsulated using Environmental variables via dotenv for security.
-- Data fetch algorithm is wrapped in an Error handling structure to account for unexpected errors.
 ---
 
 ### ✨ Features
-- __Category Navigation:__ Users can easily switch between News categories - like Business, Entertainment, Sports, Science, Health, Technology, or a mashup, using the responsive Navbar.
-- __Responsive Design:__ App layout is adaptive according to device size, ensuring readablility and suitable element scaling.
-- __Infinite Scroll:__ For the selected News category, only a certain number of News articles are fetched, sufficient enough to fill the viewport. Scroll position is continuously monitored and as soon as it reaches near the bottom of the page, next batch of News articles of same catagory are fetched. This creates a seamless and continuous reading experience.
-- __Top Loading bar:__ In order to show progress and signify the act of communicating with server a top loading bar is implemented from scratch, without relying on any third-party libraries. It subtly indicates data is being loaded, enhancing perceived responsiveness.
-- __Spinner:__ While additional articles are being loaded, especially during infinite scolling, a spinner appears at the bottom of the page. It lets user know that content is on the way, avoiding confusion and repeated scrolling.
----
-
-### ⚡ Performance
- - 
+- API keys are encapsulated using Environmental variables via dotenv to avoid accidental exposure in source code or public repositories.
+- Data fetch algorithm is wrapped in an Error handling structure to account for unexpected errors.
 ---
 
 ### 🌍 Deployment
